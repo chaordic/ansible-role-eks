@@ -7,3 +7,6 @@
 - include: worker.yaml
 
 - include: ingress.yaml
+
+- include: bootstrap.yaml
+  tags: bootstrap
