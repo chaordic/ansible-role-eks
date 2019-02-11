@@ -9,6 +9,7 @@ eks_deploy: false
 
 # EKS cluster name
 eks_cluster_name: dev
+eks_aws_account_id: 455897974533
 
 ##> AWS globals
 eks_region: us-east-1
@@ -46,6 +47,8 @@ eks_iam_role_setup: true
 eks_iam_role_arn_master: "{{ eks_prefix }}{{ eks_cluster_name }}-role-master"
 eks_iam_role_arn_worker: "{{ eks_prefix }}{{ eks_cluster_name }}-role-worker"
 eks_iam_instance_profile_arn: ""
+
+eks_iam_users_arn: []
 
 ##> Worker
 eks_ec2_userdata: ""
