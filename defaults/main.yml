@@ -48,7 +48,7 @@ eks_iam_role_arn_master: "{{ eks_prefix }}{{ eks_cluster_name }}-role-master"
 eks_iam_role_arn_worker: "{{ eks_prefix }}{{ eks_cluster_name }}-role-worker"
 eks_iam_instance_profile_arn: ""
 
-eks_iam_users_arn: []
+eks_iam_users: []
 
 ##> Worker
 eks_ec2_userdata: ""
