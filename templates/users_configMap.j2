@@ -8,7 +8,7 @@ data:
        - system:nodes
   mapUsers: |
 {% if eks_iam_users is defined %}
-{% for user in eks_iam_users_arn %}
+{% for user in eks_iam_users %}
     - userarn: arn:aws:iam::{{ eks_aws_account_id }}:user/{{ user }}
       username: {{ user }}
       groups:
